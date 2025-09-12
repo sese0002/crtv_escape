@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex_one_column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid_3_1f .grid_1_1f_1_2fr {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lyserød_baggrund {
+  background-color: #d9bfbe;
+}

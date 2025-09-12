@@ -1,16 +1,24 @@
 ---
-
+import PageLayout from "../../layouts/PageLayout.astro";
+import Card from "./components/Card.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PageLayout title="Creative Escape Forside">
+  <header>
+    <Card img="/img/forside_billede.webp" tag="Creative Escape" text="Velkommen til Creative Escape - dit kreative fælleskab i København">
+      <button class="button">Se vores udflugter</button>
+    </Card>
+  </header>
+
+  <section class="lyserød_baggrund">
+    <h3>Artikler</h3>
+    <h1>Deltag i et af vores ugentlig eller månedlig events</h1>
+    <div class="grid_1_1f_1_2fr">
+      <div class="flex_one_column">
+        <Card variant="featured" img="/img/forside_2.webp" tag="Lokal CRTV" text="Kom med på speeddating, mød nye mennesker og del dine kreative idéer." />
+        <Card variant="featured" img="/img/forside_3.webp" tag="Lokal CRTV" text="Tag kaffen med og deltag i vores walk and talk rundt om søerne, hver søndag kl. 10" />
+        <Card variant="featured" img="/img/forside_4.webp" tag="Lokal CRTV" text="Gør dig klar til vores næste månedlige yoga-event på Soho House, en opløftende pause (.." />
+      </div>
+    </div>
+  </section>
+</PageLayout>

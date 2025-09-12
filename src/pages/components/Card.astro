@@ -1,0 +1,82 @@
+---
+const { variant, img, tag, text, link } = Astro.props;
+---
+
+<article class={variant}>
+  <div class="card-image">
+    <img src={img} />
+  </div>
+  <div class="card-content">
+    <p class="tag">{tag}</p>
+    <p class="card-text">{text}</p>
+    <slot />
+  </div>
+</article>
+
+<style>
+  article {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  p {
+    line-height: 1.25rem;
+  }
+
+  .tag {
+    font-size: smaller;
+    text-transform: uppercase;
+  }
+
+  .card-content .button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .card-content .button:hover {
+    background-color: #e65c50;
+  }
+
+  .featured img {
+    max-width: 65%;
+    display: block;
+    margin: 0 auto 0.8rem; /* centers image and adds bottom spacing */
+  }
+
+  .featured .card-content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0.7rem 0.7rem;
+    text-align: left;
+    background-color: white;
+  }
+
+  .featured p {
+    display: inline;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .featured .tag {
+    display: inline;
+    text-decoration: underline;
+    font-size: 0.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 10%;
+  }
+</style>
+<script></script>
