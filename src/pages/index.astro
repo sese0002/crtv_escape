@@ -2,26 +2,110 @@
 import PageLayout from "../../layouts/PageLayout.astro";
 import Card from "./components/Card.astro";
 import Footer from "./components/Footer.astro";
+import Nyheder from "./components/nyheder.astro";
 ---
 
 <PageLayout title="Creative Escape Forside">
+  <div class="start">
   <header>
-    <Card img="/img/forside_billede.webp" tag="Creative Escape" text="Velkommen til Creative Escape - dit kreative fælleskab i København">
+    <Card img="/img/forside_billede.webp" 
+    tag="Creative Escape" 
+    text="Velkommen til Creative Escape - dit kreative fælleskab i København">
       <button class="button">Se vores udflugter</button>
     </Card>
   </header>
+</div>
 
   <section class="lyserød_baggrund">
-    <h3>Artikler</h3>
+    <h3>CRTV ESC HIGHLIGHTS</h3>
     <h1>Deltag i et af vores ugentlig eller månedlig events</h1>
     <div class="grid_1_1f_1_2fr">
       <div class="flex_one_column">
-        <Card variant="featured" img="/img/forside_2.webp" tag="Lokal CRTV" text="Kom med på speeddating, mød nye mennesker og del dine kreative idéer." />
-        <Card variant="featured" img="/img/forside_3.webp" tag="Lokal CRTV" text="Tag kaffen med og deltag i vores walk and talk rundt om søerne, hver søndag kl. 10" />
-        <Card variant="featured" img="/img/forside_4.webp" tag="Lokal CRTV" text="Gør dig klar til vores næste månedlige yoga-event på Soho House, en opløftende pause (.." />
+        <Card variant="featured" 
+        img="/img/forside_2.webp" 
+        tag="Lokal CRTV" text="Kom med på speeddating, mød nye mennesker og del dine kreative idéer." />
+        <Card variant="featured" 
+        img="/img/forside_3.webp" 
+        tag="Lokal CRTV" 
+        text="Tag kaffen med og deltag i vores walk and talk rundt om søerne, hver søndag kl. 10" />
+        <Card variant="featured" 
+        img="/img/forside_4.webp" 
+        tag="Lokal CRTV" 
+        text="Gør dig klar til vores næste månedlige yoga-event på Soho House, en opløftende pause (.." />
       </div>
     </div>
   </section>
+
+  <div class="grid1_1">
+  <section class="news-section">
+  <div class="news-container">
+    <p class="news-label">NYHEDER</p>
+    <h2 class="news-heading">SENESTE NYT</h2>
+
+    <div class="news-list">
+      <Nyheder
+      img="/img/section_img.webp"
+        title="Kreativ scrapbooking? Lyder det som noget for dig?"
+        excerpt="Kom og hyg med andre kreative sjæle — læs mere her."
+        date="30/9-2025"
+        href="/nyheder/scrapbooking"
+      />
+
+      <Nyheder
+        img="/img/section_img2.webp"
+        title="Grin hele aftenen væk, og mød nye mennesker"
+        excerpt="Tag med til vores næste Comedy Zoo event! Læs mere her."
+        date="30/9-2025"
+      />
+
+      <Nyheder
+        img="/img/section_img3.webp"
+        title="Er du nysgerrig på podcasting?"
+        excerpt="Kom og bliv inspireret af Julia Selawry til vores næste gratis event."
+        date="30/9-2025"
+      />
+
+       <Nyheder
+        img="/img/section_img4.webp"
+        title="Til middag hos...? Oplev vores nyeste intiativ, hvor folk invitere hinanden på skift."
+        excerpt="Kom og bliv inspireret af Julia Selawry til vores næste gratis event."
+        date="30/9-2025"
+      />
+    </div>
+  </div>
+</section>
+
+
+<div class="aktivitet">
+  <header>
+    <Card img="/img/img.png" 
+    tag="Se vores aktiviteter!" 
+    text="TAK FOR SIDST! BILLEDERNE FRA VORES HYGGELIGE MIDDAG I INDRE BY">
+    </Card>
+  </header>
+</div>
+</div>
+
+<section class="blue">
+    <h3>ANBEFALEDE ARTIKLER</h3>
+    <h1>KØBENHAVN FOR MADGLADE PIGER</h1>
+    <div class="grid_1_1f_1_2fr">
+      <div class="flex_one_column">
+        <Card variant="featured" 
+        img="/img/img_piger.png" 
+        tag="Lokal CRTV" text="Street Art walk in Copenhagen through the eyes of a digital designer" />
+        <Card variant="featured" 
+        img="/img/img_piger2.png" 
+        tag="Lokal CRTV" 
+        text="Tag på denne hippe og billige bar med dine veninder, og gå en drnik til kun 45 kr!" />
+        <Card variant="featured" 
+        img="/img/img_piger3.png" 
+        tag="Lokal CRTV" 
+        text="Street Art walk in Copenhagen through the eyes of a digital designer." />
+      </div>
+    </div>
+  </section>
+
 
   <div class="map">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72000.66320139547!2d12.511423973396331!3d55.67123975582436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652533c5c803d23%3A0x4dd7edde69467b8!2sK%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1757821674444!5m2!1sda!2sdk" 

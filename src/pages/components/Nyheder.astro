@@ -1,0 +1,78 @@
+---
+const { img, title, excerpt, date, href = "#" } = Astro.props;
+---
+
+<article class="news-card">
+  <img src={img} alt="" />
+  <div class="text">
+    <h3 class="title"><a href={href}>{title}</a></h3>
+    <p class="excerpt">{excerpt}</p>
+    <p class="date">{date}</p>
+  </div>
+</article>
+
+<style>
+
+
+
+.news-container{ 
+    margin:0 auto; 
+}
+
+  .news-card{
+    display: grid;
+    grid-template-columns: 96px 1fr;  /* image | text */
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #d7cfc9; /* divider like Figma */
+    align-items: start;
+  }
+
+  .img{ 
+    display:block; 
+    width:96px; 
+    height:96px; 
+    overflow:hidden; 
+    border-radius:4px; }
+
+  .img img{ 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    display:block; }
+
+  .text{ 
+    text-align:left; }
+
+  .title{ 
+    margin:0 0 4px; 
+    font-size:16px; 
+    line-height:1.4; 
+    font-weight:600; }
+
+  .title a{ 
+    color:inherit; 
+    text-decoration:none; }
+
+  .excerpt{ 
+    margin:0; 
+    font-size:14px; 
+    line-height:1.5; }
+
+  .date{ 
+    margin:8px 0 0; 
+    font-size:12px; 
+    color:#86827d; }
+
+
+  @media (min-width: 900px){
+    .news-card{ 
+    grid-template-columns: 112px 1fr; 
+    }
+    
+    .img{ 
+    width:112px; height:112px; 
+    }
+  }
+
+</style>
