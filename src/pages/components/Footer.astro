@@ -1,0 +1,268 @@
+<footer class="footer">
+      <div class="marquee">NEWSLETTER+++&nbsp;&nbsp;NEWSLETTER+++&nbsp;&nbsp;NEWSLETTER+++&nbsp;&nbsp;NEWSLETTER+++&nbsp;&nbsp;NEWSLETTER+++&nbsp;&nbsp;NEWSLETTER+++&nbsp;&nbsp;NEWSLETTER+++</div>
+
+    <div class="footer-inner">
+    <!-- marquee (optional) -->
+
+<div class="toprow">
+    <div>
+        <h2 class="footer-title">
+<span class="mobile">NYHEDER OM DESIGN<br>DIREKTE I DIN INDBAKKE</span>
+
+  <span class="desktop">NYHEDER OM<br>DESIGN DIREKTE I<br> DIN INDBAKKE</span>
+        </h2>
+    </div>
+
+<div>
+    <form class="newsletter" action="#">
+      <input type="email" placeholder="Email" required>
+      <button type="submit">SIGN UP</button>
+    </form>
+    </div>
+</div>
+    
+<div class="footer-links">
+      <div class="col-logo-col">
+        <p>CREATIVE ESCAPE</p>
+    </div>
+    <!-- link cards -->
+<div class="col">
+    <div class="link-card">
+      <ul>
+        <li><a href="#">Hjemmeside</a></li>
+        <li><a href="#">Podcast</a></li>
+        <li><a href="#">Forfattere</a></li>
+      </ul>
+    </div>
+</div>
+
+<div class="col">
+    <div class="link-card">
+      <ul>
+        <li><a href="#">Kunst</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Arkitektur</a></li>
+      </ul>
+    </div>
+</div>
+
+
+<div class="col">
+    <div class="sociale">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Snapchat"><i class="fa-brands fa-snapchat-ghost"></i></a>
+    </div>
+</div>
+
+  </div>
+</footer>
+
+<style>
+.footer{
+  background:#E2DDD6;
+}
+
+.footer-inner{
+  max-width: 560px;      /* mobile-first; keeps content narrow */
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+/* optional scrolling line */
+.marquee{
+overflow: hidden;
+  font-weight: 900;
+  letter-spacing:.06em;
+  font-size: 30px;
+  color:white;
+  margin-bottom: 28px;
+  width: 100%;
+  padding-top: 20px;
+  word-spacing: 10px;
+}
+
+/* title */
+.footer-title{
+  color:white;
+  font-weight: 400;
+  line-height:1.2;
+  margin: 40px 0 18px;
+  text-align: center;
+  text-transform: uppercase; /* remove if you don't want caps */
+  font-size: 22px;
+}
+
+
+
+/* newsletter input + button in a rust frame */
+.newsletter{
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  margin: 10px 0 28px;
+  background:#A55533;
+}
+
+.newsletter input{
+    flex: 1;
+  height: 42px;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 14px;
+}
+
+.newsletter button{
+  height: 42px;
+  padding: 0 14px;
+  border: none;
+  background:white ;
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* rust link boxes */
+.link-card{
+  background: #A55533;
+  color: white;
+  padding: 18px 20px;
+  margin: 22px 0;
+  box-shadow: 0 2px 0 rgba(0,0,0,.08) inset; /* subtle top line */
+}
+
+.link-card ul{ 
+    list-style:none; 
+    margin:0; 
+    padding:0; 
+}
+
+.link-card li{ 
+    padding:10px 0; 
+}
+
+.link-card a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* socials row */
+.sociale{
+  display:flex;
+  gap: 20px;
+  justify-content: center;
+  align-items:center;
+  margin-top: 22px;
+}
+.sociale a{
+  color: white;
+  background: transparent;
+  width: 36px; height: 36px;
+  display:grid; place-items:center;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-decoration:none;
+  font-size: 16px;    /* icon size */
+}
+
+.col-logo-col{
+    display: none;
+}
+
+.footer-title .desktop{
+    display: none !important;
+}
+
+.footer-title .mobile{
+    display: inline !important;
+}
+@media (min-width: 768px) {
+
+.marquee{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+    .col-logo-col{
+    display: inline;
+}
+
+.footer-inner{
+    max-width: 1200px;
+}
+
+  .toprow{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content:space-between;
+    gap:48px;
+  }
+
+.footer-title {
+    margin: 0;
+    font-size: 60px;
+    color: black;
+    line-height: 1.1;
+    text-align: left;
+    max-width: none;
+    letter-spacing: 0;
+  }
+
+
+  .newsletter {
+    margin: 0;
+    width: auto;
+    background: transparent;
+  }
+
+
+  .newsletter input{
+    border: 1px solid #ddd;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    text-align: left;
+    margin-top: 40px;
+    gap: 100px;
+  }
+
+  .link-card{
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .link-card a{
+    color: black;
+  }
+
+  .sociale {
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .sociale a{
+    color: black;
+    border: none;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+  }
+}  
+
+.footer-title .desktop{
+    display: inline !important;
+}
+
+.footer-title .mobile{
+    display: none !important;
+}
+</style>
