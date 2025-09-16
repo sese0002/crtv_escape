@@ -8,7 +8,7 @@ import Nyheder from "./components/nyheder.astro";
 <PageLayout title="Creative Escape Forside">
   <div class="start">
   <header>
-    <Card img="/img/forside_billede.webp" 
+    <Card img="/img/img.webp" class="hero" 
     tag="Creative Escape" 
     text="Velkommen til Creative Escape - dit kreative fælleskab i København">
       <button class="button">Se vores udflugter</button>
@@ -43,13 +43,14 @@ import Nyheder from "./components/nyheder.astro";
     <h2 class="news-heading">SENESTE NYT</h2>
 
     <div class="news-list">
+      
+      <a href="/artikel" class="artikel">
       <Nyheder
-      img="/img/section_img.webp"
+        img="/img/section_img.webp"
         title="Kreativ scrapbooking? Lyder det som noget for dig?"
         excerpt="Kom og hyg med andre kreative sjæle — læs mere her."
         date="30/9-2025"
-        href="/nyheder/scrapbooking"
-      />
+      /></a>
 
       <Nyheder
         img="/img/section_img2.webp"
@@ -66,7 +67,7 @@ import Nyheder from "./components/nyheder.astro";
       />
 
        <Nyheder
-        img="/img/section_img4.webp"
+        img="/img/section_img4_.webp"
         title="Til middag hos...? Oplev vores nyeste intiativ, hvor folk invitere hinanden på skift."
         excerpt="Kom og bliv inspireret af Julia Selawry til vores næste gratis event."
         date="30/9-2025"
@@ -78,9 +79,9 @@ import Nyheder from "./components/nyheder.astro";
 
 <div class="aktivitet">
   <header>
-    <Card img="/img/img.png" 
+    <Card img="/img/forside_billede.webp"
     tag="Se vores aktiviteter!" 
-    text="TAK FOR SIDST! BILLEDERNE FRA VORES HYGGELIGE MIDDAG I INDRE BY">
+    text="TAK FOR SIDST! BILLEDERNE FRA VORES HYGGELIGE YOGA KLASSE I INDRE BY">
     </Card>
   </header>
 </div>

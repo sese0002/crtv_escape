@@ -23,7 +23,7 @@
     
 <div class="footer-links">
       <div class="col-logo-col">
-        <p>CREATIVE ESCAPE</p>
+        <img src="/img/Heartbeat.gif" class="gif" alt="Creative escape logo">
     </div>
     <!-- link cards -->
 <div class="col">
@@ -189,9 +189,24 @@ overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
-    .col-logo-col{
-    display: inline;
+   
+.col-logo-col{
+  position: relative;
+  display: block;          /* instead of inline */
+  place-self: start;       /* = align-self:start + justify-self:start */
+  margin-top: 12px;        /* nudge down if you want */
+
 }
+
+.gif{
+  position: relative;
+  margin-bottom: 40px;
+  width: 170px;   /* change size here */
+  height: auto;
+  display: block;
+  right: 10px;
+}
+
 
 .footer-inner{
     max-width: 1200px;

@@ -5,7 +5,7 @@ const { img, title, excerpt, date, href = "#" } = Astro.props;
 <article class="news-card">
   <img src={img} alt="" />
   <div class="text">
-    <h3 class="title"><a href={href}>{title}</a></h3>
+    <h3 class="title">{title}</h3>
     <p class="excerpt">{excerpt}</p>
     <p class="date">{date}</p>
   </div>
@@ -24,10 +24,11 @@ const { img, title, excerpt, date, href = "#" } = Astro.props;
     grid-template-columns: 96px 1fr;  /* image | text */
     gap: 16px;
     padding: 16px 0;
-    border-bottom: 1px solid #d7cfc9; /* divider like Figma */
+    border-bottom: 1px solid #d7cfc9; 
     align-items: start;
   }
 
+  
   .img{ 
     display:block; 
     width:96px; 
