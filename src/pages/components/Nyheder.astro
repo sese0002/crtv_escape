@@ -21,7 +21,7 @@ const { img, title, excerpt, date, href = "#" } = Astro.props;
 
   .news-card{
     display: grid;
-    grid-template-columns: 96px 1fr;  /* image | text */
+    grid-template-columns: 96px 1fr;  /* billede og tekst */
     gap: 16px;
     padding: 16px 0;
     border-bottom: 1px solid #d7cfc9; 
@@ -36,11 +36,6 @@ const { img, title, excerpt, date, href = "#" } = Astro.props;
     overflow:hidden; 
     border-radius:4px; }
 
-  .img img{ 
-    width:100%; 
-    height:100%; 
-    object-fit:cover; 
-    display:block; }
 
   .text{ 
     text-align:left; }

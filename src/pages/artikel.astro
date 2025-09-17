@@ -4,34 +4,89 @@ import Footer from "./components/Footer.astro";
 ---
 
 <PageLayout title="Creative Escape Artikel">
-    <h1>FREE GEM:</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt atque blanditiis repellendus enim nesciunt omnis dicta, magnam cumque obcaecati assumenda molestiae voluptatibus ipsa dolores deserunt alias cum quo dignissimos?</h2>
-    <img > 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas sed saepe ad rem, nam eaque dicta cupiditate numquam illum quidem fugiat quia esse molestias officia veritatis quisquam. Nulla, voluptatum deleniti? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ratione alias magnam magni voluptatibus quaerat iste laudantium animi neque? Adipisci vero aliquid voluptates similique fugiat odit quaerat totam deserunt voluptatibus?</p>
+    <div class="hotel">
+    <h1>Skjult perle i København: Gratis vinylhygge midt i byen!</h1>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/Qpx1VHdcQuc?si=x0vq8oLyotOWrUHl&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>I hjertet af København, ligger 25hours Hotel i store og smukke historiske bygninger, der engang fungerede som universitet.
+Hotellet slog dørene op i 2021 og har siden markeret sig som et farverigt og kreativt alternativ til de klassiske hoteller i hovedstaden.
+Hvert 25hours hotel I verdenen prøver at skille sige ud baseret på forskellige stilistiske tematikker - og dette hotel er ingen undtagelse.</p>
+
+<img src="/public/img/img1_artikel.webp" alt="Hotel indgang"> 
+<p>Indretningen af hotellet er designet af Martin Brudnizki Design Studios fra London. Dette hotels visuelle identitet tager udgangspunkt i temaerne “Passion” og “Knowledge”, som er baseret på bygningens akademiske historie. 
+    Resultatet er et hyggeligt legende miks af kunst, kultur og moderne komfort, hvor hvert rum har sin egen unikke atmosfære og uformelle charme. </p>
+ <img src="/public/img/img2_artikel.webp" alt="baren">   
+    <p>En de disse rum er “Vinyl Room”, som du kan finde så snart du træder ind af døren og op ad trappen mod receptionen. Udover rummet er en af de eneste af sin slags i København - så er det nemlig også gratis at bruge. Man behøver simpelhen hverken at købe noget eller være tjekket ind på hotellet for at benytte rummet som sit eget lille pusterum. Måske har du aldrig prøvet at sætte en plade på før og gerne vil opleve hvordan det forgår. Ja - så har 25hours endda også lave en fysisk guide til dig i rummet, hvordan man kommer i gang med musikken. 
+Kort sagt, her er du i trygge hænder og kan altså rolig slå dig med god samvittighed og benytte muligheden for at sætte en plade/casttebånd på helt uforpligtet - bare du husker at lægge det tilbage, hvor du tog det fra.</p>
+<p>Da vi var der selv, havde vi hele rummet for os selv, som på en måde virkede overaskende. Vi valgte at sætte noget Stevie Wonder og smed os os i de rare bløde stole, hvor der gik en god times tid med lidt kreativt arbejde fra computeren af. Musikken skulle lige justeres lidt så den ikke var for høj. Man har dog mulighed for lukke dørene til rummet, så man mere kan zone ind i musikken, hvis man ønsker. 
+    Der var der også et “Library Room” over for rummet, man også havde mulighed for at slynge sig og slå benene op i ro og mag - særligt med en god bog. </p>
+    <img src="/public/img/img3_artikel.webp">
+    <p>Udfra netop disse rum, føltes tema'erne “passion” og “knowledge” suverænt præsenteret og realiserede. Indretningen og oplevelsen var i særdeleshed gennemført. 
+        Med videre er det selvfølgelig også værd at nævne, at hotellet også har en utrolig afslappede bar og lækker restaurant, der også er værd at stikke hovedet forbi. Der er altså kort sagt tale om eminente tilbud på hotellet for hygge, kreativitet og gæstfrihed i højsædet. 
+        Vi kommer igen og kan derfor kun anbefalde det her dejlige farverige åndehul og deres lille gemte perle - vinylrummet - når man er i Indre by.</p>
+        <p>Har du selv set eller oplevet ligende steder eller koncepter i København?</p>
+       </div> 
     <Footer></Footer>
 </PageLayout>
 
 
 <style>
+    body{
+        background-color: #f1f1f1;
+    }
+    
     h1{
         text-align: center;
-        font-family: Bondoni Moda;
+        font-family: Bodoni Moda;
         font-size: 20px;
         text-decoration: underline;
         margin-top: 30px;
         margin-bottom: 10px;
     }
 
-    h2{
-        text-align: center;
-        padding: 20px;
-        font-size: 15px;
-    }
 
     p{
+        font-family: Bodoni Moda;
         text-align: center;
         font-size: 13px;
         padding: 20px;
+        line-height: 20px;
+    }
+
+    .hotel {
+        justify-content: center; 
+        align-items: center
+    }
+
+    .hotel img{
+         width: 300px;
+         display: block;
+         margin: 0 auto;
+    }
+
+    .hotel iframe{
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px){
+        h1{
+          font-size: 35px;  
+        }
+        
+        p{
+            display: block;
+            margin: 0 auto;
+            font-size: 15px;
+            max-width: 700px;
+        }
+
+        .hotel img{
+            width: 500px;
+        }
+
+        .hotel iframe{
+            width: 600px;
+        }
     }
 
 </style>
